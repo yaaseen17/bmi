@@ -1,35 +1,57 @@
-body{
-    background-color: darkslategrey;
+body {
+  background-color: rgb(0, 0, 0);
 }
-button{
-    cursor: pointer;
+button {
+  cursor: pointer;
 }
-#header{
-    text-align: center;
-    font-family: sans-serif;
+#header {
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
 }
-.container{
-    margin: auto;
-    margin-top: 12%;
-    width: 600px;
-    padding: 20px;
-    background-color: gainsboro;
-    font-family: sans-serif;
-    border: 2px solid deepskyblue;
+.container {
+  margin: auto;
+  margin-top: 12%;
+  width: fit-content;
+  padding: 20px;
+  background-image: radial-gradient(white, #e66f00);
+  font-family: sans-serif;
+  border: 2px solid transparent;
+  border-radius: 10%;
+  box-shadow: 0px 0px 20px 10px #e66f00;
 }
-#bmi{
-    width: 600px;
-    padding: 10px 0;
+#bmi {
+  width: 100px;
+  padding: 10px 0;
+  margin-left: 35%;
+  background-color: black;
+  color: white;
 }
-#clear{
-    padding: 10px 20px;
+#clear {
+  padding: 10px 20px;
+  border-radius: 15%;
+  margin-left: 39%;
+  color: white;
+  background-color: black;
 }
-#secIn{
-    float: right;
+#secIn {
+  float: right;
 }
-#comment{
-    color: darkgreen;
+#comment {
+  color: rgb(0, 0, 0);
 }
-#error{
-    color:darkred;
+#error {
+  color: rgb(0, 0, 0);
+}
+.input {
+  background-color: transparent;
+  color: black;
+}
+#gndr {
+  background-color: transparent;
+}
+.myLabel {
+  font-family: "Times New Roman", Times, serif;
+}
+input {
+  width: 50px;
 }
