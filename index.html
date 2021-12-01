@@ -4,31 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
     <title>BMI</title>
 </head>
 <body>
     <div class="container">
-        <h1>Calculate Your BMI</h1>
+        <h1 id="header">Calculate Your BMI</h1>
         
-
-        <label for="weight">Your Weight</label><br>
+        <label for="weight" class="myLabel">Your Weight</label><br>
         <input class="input" type="text" name="weight" id="weight" placeholder="in kilograms (kg)"><br><br>
-        <label for="height">Your Height</label><br>
+        <label class="myLabel" for="height">Your Height</label><br>
         <input class="input" type="text" name="height" id="height" placeholder="in meters (m)"><br><br>
-        <label for="gender">Gender</label>
+        <label class="myLabel" for="gender">Gender</label>
         <select name="gender" id="gndr" onclick="disableInput()">
             <option value="empty"></option>
             <option value="male">Male</option>
             <option value="female">Female</option>
         </select>
-        <label for="age">Age</label>
-        <input class="input" type="text" name="age" id="age" >
-        <button id="bmi" onclick="myBMI()">Generate BMI</button>
-        <div id="outputBmi"></div>
-        <div id="IdealBmi"></div>
-        <div id="comment"></div>
+        <label class="myLabel" for="age">Age</label>
+        <input class="input" type="text" name="age" id="age" ><br><br>
+        <button id="bmi" onclick="myBMI()">Generate BMI</button><br><br>
+        <!-- <div id="outputBmi"></div> -->
+        <label for="BMI">BMI</label>
+        <input class="input" type="text" id="outputBmi" disabled>
+        <!-- <div id="IdealBmi"></div> -->
+        <div id="secIn">
+        <label for="BMI">Ideal BMI</label>
+        <input class="input" type="text" id="IdealBmi" disabled>
+        </div><br><br>
+        <div id="comment"></div><br>
         <button id="clear" onclick="clear_inputs()">clear</button>
-        <button id="exit">&nbsp;</button>
+        <!-- <button id="exit">&nbsp;</button> -->
     </div>
     <script src="assets/js/index.js"></script>
 </body>

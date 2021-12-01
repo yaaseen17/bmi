@@ -5,16 +5,16 @@ function myBMI(){
     let w = document.getElementById("weight").value;
     let h = document.getElementById("height").value;
     let ans = w/(h**2);
-    document.getElementById("outputBmi").innerHTML = `Your BMI is ${ans}`
+    document.getElementById("outputBmi").value = `${ans}`
     
     let age = document.getElementById('age')
 
     if(document.getElementById('gndr').value == 'male'){
         let ansMale = 0.5*ans + 11.5;
-        idealBmi.innerHTML = `Ideal BMI is ${ansMale}`
+        idealBmi.value = `${ansMale}`
     }else if(document.getElementById('gndr').value == 'female'){
         let ansMale = 0.5*ans + 0.03*age.value + 11;
-        idealBmi.innerHTML = `Ideal BMI is ${ansMale}`
+        idealBmi.innerHTML = `${ansMale}`
     }
 
 

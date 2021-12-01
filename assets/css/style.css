@@ -1,0 +1,32 @@
+body{
+    background-color: darkslategrey;
+}
+button{
+    cursor: pointer;
+}
+#header{
+    text-align: center;
+    font-family: sans-serif;
+}
+.container{
+    margin: auto;
+    margin-top: 12%;
+    width: 600px;
+    padding: 20px;
+    background-color: gainsboro;
+    font-family: sans-serif;
+    border: 2px solid deepskyblue;
+}
+#bmi{
+    width: 600px;
+    padding: 10px 0;
+}
+#clear{
+    padding: 10px 20px;
+}
+#secIn{
+    float: right;
+}
+#comment{
+    color: darkgreen;
+}
