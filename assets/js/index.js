@@ -7,9 +7,21 @@ function myBMI(){
     let ans = w/(h**2);
     document.getElementById("outputBmi").value = `${ans}`
     
-    let age = document.getElementById('age')
+    let age = document.getElementById('age');
 
-    if(document.getElementById('gndr').value == 'male'){
+    if (document.getElementById('gndr').value == 'empty'){
+        document.getElementById('error').innerHTML = "Please enter gender as well";
+        let inputs = document.getElementsByClassName('input')
+
+    for(x of inputs){
+        x.value = '';
+    }
+
+    document.getElementById('gndr').value = 'empty';
+    document.getElementById("outputBmi").innerHTML = "";
+    idealBmi.innerText = "";
+    comment.innerText = "";
+    }else if(document.getElementById('gndr').value == 'male'){
         let ansMale = 0.5*ans + 11.5;
         idealBmi.value = `${ansMale}`
     }else if(document.getElementById('gndr').value == 'female'){
