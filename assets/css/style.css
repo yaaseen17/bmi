@@ -22,9 +22,10 @@ button {
 #bmi {
   width: 100px;
   padding: 10px 0;
-  margin-left: 35%;
+  margin-left: 33%;
   background-color: black;
   color: white;
+  border-radius: 10%;
 }
 #clear {
   padding: 10px 20px;
@@ -45,9 +46,17 @@ button {
 .input {
   background-color: transparent;
   color: black;
+  border-top: transparent;
+  border-left: transparent;
+  border-right: transparent;
+  border-color: black;
 }
 #gndr {
   background-color: transparent;
+  border-top: transparent;
+  border-left: transparent;
+  border-right: transparent;
+  border-color: black;
 }
 .myLabel {
   font-family: "Times New Roman", Times, serif;
