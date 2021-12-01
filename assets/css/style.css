@@ -16,7 +16,7 @@ button {
   background-image: radial-gradient(white, #e66f00);
   font-family: sans-serif;
   border: 2px solid transparent;
-  border-radius: 10%;
+  border-radius: 5%;
   box-shadow: 0px 0px 20px 10px #e66f00;
 }
 #bmi {
